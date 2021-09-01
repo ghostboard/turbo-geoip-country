@@ -1,39 +1,21 @@
 {
 	"name": "geoip-lite",
 	"version": "1.4.2",
-	"description": "A light weight native JavaScript implementation of GeoIP API from MaxMind",
-	"keywords": [
-		"geo",
-		"geoip",
-		"ip",
-		"ipv4",
-		"ipv6",
-		"geolookup",
-		"maxmind",
-		"geolite"
-	],
-	"homepage": "https://github.com/geoip-lite/node-geoip",
-	"author": "Philip Tellis <philip@bluesmoon.info> (http://bluesmoon.info/)",
-	"files": [
-		"lib/",
-		"data/",
-		"test/",
-		"scripts/"
-	],
-	"main": "lib/geoip.js",
+	"description": "An updated, performance-focused fork of node-geoip with country data only",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/geoip-lite/node-geoip.git"
+		"url": "git://github.com/ghostboard/turbo-geoip-country.git"
 	},
-	"engines": {
-		"node": ">=5.10.0"
+	"homepage": "https://github.com/ghostboard/turbo-geoip-country",
+	"bugs": {
+		"url": "https://github.com/ghostboard/turbo-geoip-country/issues"
 	},
-	"scripts": {
-		"pretest": "eslint .",
-		"test": "nodeunit --reporter=minimal test/tests.js",
-		"updatedb": "node scripts/updatedb.js",
-		"updatedb-debug": "node scripts/updatedb.js debug",
-		"updatedb-force": "node scripts/updatedb.js force"
+	"author": {
+		"name": "David Burgos",
+		"url": "https://ghostboard.io/"
+	},
+	"config": {
+		"update": true
 	},
 	"dependencies": {
 		"async": "^2.6.3",
@@ -43,12 +25,41 @@
 		"rimraf": "^2.7.1",
 		"yauzl": "^2.9.2"
 	},
-	"config": {
-		"update": true
+	"deprecated": false,
+	"engines": {
+		"node": ">=5.10.0"
+	},
+	"main": "lib/geoip.js",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nodeunit test/tests.js",
+		"updatedb": "node scripts/updatedb.js",
+		"updatedb-debug": "node scripts/updatedb.js debug",
+		"updatedb-force": "node scripts/updatedb.js force"
 	},
 	"devDependencies": {
 		"eslint": "^5.16.0",
 		"nodeunit": "^0.11.3"
 	},
+	"files": [
+		"lib/",
+		"data/",
+		"test/",
+		"scripts/"
+	],
+	"keywords": [
+		"geo",
+		"geoip",
+		"ip",
+		"ipv4",
+		"ipv6",
+		"geolookup",
+		"maxmind",
+		"geolite",
+		"country",
+		"light",
+		"performance",
+		"optimized"
+	],
 	"license": "Apache-2.0"
 }
