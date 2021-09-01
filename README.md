@@ -5,7 +5,7 @@ This is an updated, performance-focused fork of [node-geoip](https://github.com/
 This product uses GeoLite data created by MaxMind, available from http://maxmind.com/
 You would need to create an account and get a license key to update by yourself
 
-[![Build Status](https://travis-ci.org/bluesmoon/node-geoip.svg?branch=master "node-geoip on Travis")](https://travis-ci.org/bluesmoon/node-geoip)
+[![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://travis-ci.com/ghostboard/turbo-geoip-country)
 
 ## Why `turbo-geoip-country` ⚡️
 
