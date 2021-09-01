@@ -1,17 +1,17 @@
 # turbo-geoip-country
 
-This is an updated, performance-focused fork of [node-geoip](https://github.com/geoip-lite/node-geoip) with only country data. Inspired by [danielstjules/geoip-ultralight](https://github.com/danielstjules/geoip-ultralight)
+This is an updated, performance-focused fork of [node-geoip](https://github.com/geoip-lite/node-geoip) with only country data. Inspired by [geoip-ultralight](https://github.com/danielstjules/geoip-ultralight)
 
 This product uses GeoLite data created by MaxMind, available from http://maxmind.com/
 You would need to create an account and get a license key to update by yourself
 
-[![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://travis-ci.com/ghostboard/turbo-geoip-country)
+[![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://app.travis-ci.com/github/ghostboard/turbo-geoip-country)
 
 ## Why `turbo-geoip-country` ⚡️
 
 - 🚀 Get country code (2 letter ISO-3166-1) by IP v4/v6
 - 🔥 Performance focused (see the section below)
-- ✅ Around 25 MB memory footprint (instead of +110 MB of node-geoip)
+- ✅ Less than 25 MB memory footprint (instead of +110 MB of node-geoip)
 - ⚡️ Updated dependencies and 1 removed
 - 🤓 Code reduced and deprecations updated
 - ⏰ Data updated at 1st September 2021
