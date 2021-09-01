@@ -1,6 +1,7 @@
-/node_modules
-/tmp
+node_modules/
+tmp/
 npm-debug.log
-
-# JetBrains IDE project files
-/.idea/
+*.log
+*.out
+*.gz
+.DS_Store
