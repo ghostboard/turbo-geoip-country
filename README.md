@@ -2,8 +2,9 @@
 
 This is an updated, performance-focused fork of [node-geoip](https://github.com/geoip-lite/node-geoip) with only country data. Inspired by [geoip-ultralight](https://github.com/danielstjules/geoip-ultralight)
 
-This product uses GeoLite data created by MaxMind, available from http://maxmind.com/
-You would need to create an account and get a license key to update by yourself
+This product uses GeoLite data created by MaxMind, available from [https://www.maxmind.com/](https://www.maxmind.com/)
+
+💡 You would need to create an account and get a license key to update data by yourself
 
 [![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://app.travis-ci.com/github/ghostboard/turbo-geoip-country)
 
@@ -49,14 +50,18 @@ npm install turbo-geoip-country --save
 ## How to use it 🤖
 
 ```javascript
-var turboGeoip = require('turbo-geoip-country');
+const turboGeoip = require('turbo-geoip-country');
 
-var ip = "207.97.227.239";
-var country = turboGeoip.getCountry(ip);
-
+const ip = "207.97.227.239";
+const country = turboGeoip.getCountry(ip);
 console.log(country);
 'US'
 
+// Also it works with anonymized ip
+const ip = "207.97.227.0";
+const country = turboGeoip.getCountry(ip);
+console.log(country);
+'US'
 ```
 
 ## How to update the data 🔑
@@ -86,9 +91,9 @@ OK: 7 assertions (19ms)
 
 ## References
 
-  - <a href="http://www.maxmind.com/app/iso3166">Documentation from MaxMind</a>
-  - <a href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166 (1 & 2) codes</a>
-  - <a href="http://en.wikipedia.org/wiki/List_of_FIPS_region_codes">FIPS region codes</a>
+- [Documentation from MaxMind](http://www.maxmind.com/app/iso3166)
+- [ISO 3166 (1 & 2) codes](http://en.wikipedia.org/wiki/ISO_3166)
+- [FIPS region codes](http://en.wikipedia.org/wiki/List_of_FIPS_region_codes)
 
 ## Copyright
 
