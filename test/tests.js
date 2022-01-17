@@ -6,7 +6,6 @@ module.exports = {
 
 		var ip = '8.8.4.4';
 		var ipv6 = '2001:4860:b002::68';
-
 		var country = geoip.getCountry(ip);
 
 		test.strictEqual(country, 'US', "should match country");
