@@ -15,11 +15,12 @@ This product uses GeoLite data created by MaxMind, available from [https://www.m
 - ✅ Less than 25 MB memory footprint (instead of +110 MB of node-geoip)
 - ⚡️ Updated dependencies and 1 removed
 - 🤓 Code reduced and deprecations updated
-- ⏰ Data updated at 1st September 2021
+- ⏰ Data updated at 17th January 2022
+- 📅 Using [Calendar versioning](https://calver.org/)
 
 ## Performance 🔥
 
-💡 Based on the best performance of 10 executions of each package on a 2018 Mac Mini i7 6c12t 16GB
+💡 Based on the average performance of 10 executions of each package on a 2018 Mac Mini i7 6c12t 16GB
 
 | Metric | node-geoip | turbo-geoip-country | delta  |
 | ------- | ------- | ------- | ------- |
