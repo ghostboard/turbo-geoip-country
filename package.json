@@ -1,7 +1,7 @@
 {
 	"name": "turbo-geoip-country",
-	"version": "22.1.0",
-	"description": "An updated, performance-focused fork of node-geoip with country data only",
+	"version": "22.4.0",
+	"description": "An updated, performance-focused fork of node-geoip with only country data",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ghostboard/turbo-geoip-country.git"

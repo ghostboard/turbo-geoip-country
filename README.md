@@ -8,15 +8,39 @@ This product uses GeoLite data created by MaxMind, available from [https://www.m
 
 [![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://app.travis-ci.com/github/ghostboard/turbo-geoip-country)
 
+## How to install 🎁
+
+```bash
+npm install turbo-geoip-country --save
+```
+## How to use it 🤖
+
+```javascript
+const turboGeoip = require('turbo-geoip-country');
+
+const ip = "207.97.227.239";
+const country = turboGeoip.getCountry(ip);
+console.log(country);
+'US'
+
+// Also it works with anonymized ip
+const ip = "207.97.227.0";
+const country = turboGeoip.getCountry(ip);
+console.log(country);
+'US'
+```
+
 ## Why `turbo-geoip-country` ⚡️
 
 - 🚀 Get country code (2 letter ISO-3166-1) by IP v4/v6
+- 🔒 Works also with anonymized IP
 - 🔥 Performance focused (see the section below)
 - ✅ Less than 25 MB memory footprint (instead of +110 MB of node-geoip)
 - ⚡️ Updated dependencies and 1 removed
 - 🤓 Code reduced and deprecations updated
-- ⏰ Data updated at 17th January 2022
+- ⏰ Data updated at 2nd April 2022
 - 📅 Using [Calendar versioning](https://calver.org/)
+- 🌐 Production-ready, used by [Ghostboard.io](https://ghostboard.io)
 
 ## Performance 🔥
 
@@ -41,28 +65,6 @@ vs [node-geoip](https://github.com/geoip-lite/node-geoip) `node test/geo-lookup.
 ```bash
 Found 30000 (16917/13083) ips in 215ms (139534.884 ip/s) (7μs/ip)
 Took 47 ms to startup
-```
-
-## How to install 🎁
-
-```bash
-npm install turbo-geoip-country --save
-```
-## How to use it 🤖
-
-```javascript
-const turboGeoip = require('turbo-geoip-country');
-
-const ip = "207.97.227.239";
-const country = turboGeoip.getCountry(ip);
-console.log(country);
-'US'
-
-// Also it works with anonymized ip
-const ip = "207.97.227.0";
-const country = turboGeoip.getCountry(ip);
-console.log(country);
-'US'
 ```
 
 ## How to update the data 🔑
