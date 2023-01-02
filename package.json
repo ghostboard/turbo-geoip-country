@@ -1,6 +1,6 @@
 {
 	"name": "turbo-geoip-country",
-	"version": "22.10.0",
+	"version": "23.1.0",
 	"description": "An updated, performance-focused fork of node-geoip with only country data",
 	"repository": {
 		"type": "git",
@@ -18,7 +18,7 @@
 		"update": true
 	},
 	"dependencies": {
-		"async": "^2.6.3",
+		"async": "^2.6.4",
 		"iconv-lite": "^0.4.24",
 		"ip-address": "^5.9.4",
 		"lazy": "^1.0.11",
