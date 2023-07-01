@@ -35,8 +35,8 @@ console.log(country);
 - 🚀 Get country code (2 letter ISO-3166-1) by IP v4/v6
 - 🔒 Works also with anonymized IP
 - 🔥 Performance focused (see the section below)
-- ✅ Less than 25 MB memory footprint (instead of +110 MB of node-geoip)
-- ⏰ Data updated on 1st April 2023
+- ✅ Less than 19 MB memory footprint (instead of +110 MB of node-geoip)
+- ⏰ Data updated on 1st July 2023
 - 📅 Using [Calendar versioning](https://calver.org/)
 - 🌐 Production-ready, used by [Ghostboard.io](https://ghostboard.io)
 - ⚡️ Updated dependencies and 1 removed
