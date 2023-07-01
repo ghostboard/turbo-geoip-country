@@ -19,11 +19,11 @@
 	},
 	"dependencies": {
 		"async": "^2.6.4",
-		"iconv-lite": "^0.4.24",
+		"iconv-lite": "^0.6.3",
 		"ip-address": "^5.9.4",
 		"lazy": "^1.0.11",
 		"rimraf": "^2.7.1",
-		"yauzl": "^2.9.2"
+		"yauzl": "^2.10.0"
 	},
 	"deprecated": false,
 	"engines": {
