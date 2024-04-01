@@ -28,9 +28,7 @@
 	"scripts": {
 		"pretest": "eslint .",
 		"test": "nodeunit test/tests.js",
-		"updatedb": "node scripts/updatedb.js",
-		"updatedb-debug": "node scripts/updatedb.js debug",
-		"updatedb-force": "node scripts/updatedb.js force"
+		"regenerate": "node scripts/regenerate.js"
 	},
 	"devDependencies": {
 		"csv-parser": "^3.0.0",
