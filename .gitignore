@@ -1,5 +1,6 @@
 node_modules/
 tmp/
+input/*
 npm-debug.log
 *.log
 *.out
