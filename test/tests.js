@@ -34,7 +34,7 @@ module.exports = {
 	testUpdatedIps: function (test) {
 		test.expect(2);
 
-		test.strictEqual(geoip.getCountry('193.37.32.0'), 'SG', "should match country");
+		test.strictEqual(geoip.getCountry('193.37.32.0'), 'NL', "should match country");
 		test.strictEqual(geoip.getCountry('45.183.209.0'), 'BR', "should match country");
 
 		test.done();
