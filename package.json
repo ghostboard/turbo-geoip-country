@@ -18,12 +18,7 @@
 		"update": true
 	},
 	"dependencies": {
-		"async": "^2.6.4",
-		"iconv-lite": "^0.6.3",
-		"ip-address": "^5.9.4",
-		"lazy": "^1.0.11",
-		"rimraf": "^2.7.1",
-		"yauzl": "^2.10.0"
+		"async": "^3.2.5"
 	},
 	"deprecated": false,
 	"engines": {
@@ -38,7 +33,9 @@
 		"updatedb-force": "node scripts/updatedb.js force"
 	},
 	"devDependencies": {
-		"eslint": "^5.16.0",
+		"csv-parser": "^3.0.0",
+		"eslint": "^8.57.0",
+		"ip-address": "^9.0.5",
 		"nodeunit": "^0.11.3"
 	},
 	"files": [
