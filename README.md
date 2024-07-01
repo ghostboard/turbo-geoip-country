@@ -36,11 +36,11 @@ console.log(country);
 - 🔒 Works also with anonymized IP
 - 🔥 Performance focused (see the section below)
 - ✅ Less than 19 MB memory footprint (instead of +110 MB of node-geoip)
-- ⏰ Data updated on 1st April 2024
+- ⏰ Data updated on 1st July 2024
 - 📅 Using [Calendar versioning](https://calver.org/)
 - 🌐 Production-ready, used by [Ghostboard.io](https://ghostboard.io)
-- ⚡️ Updated dependencies and 5 removed
-- 🤓 Code reduced and deprecations updated
+- ⚡️ Dependencies updated and 5 of them removed
+- 🤓 Code reduced
 
 ## Performance 🔥
 
@@ -69,11 +69,13 @@ Took 47 ms to startup
 
 ## How to update the data 🔑
 
-Run `cd node_modules/turbo-geoip-country && npm run-script updatedb license_key=YOUR_LICENSE_KEY`
-
-👉 Replace `YOUR_LICENSE_KEY` with your license key obtained from [maxmind.com](https://support.maxmind.com/account-faq/account-related/how-do-i-generate-a-license-key/). You can create a maxmind account [here](https://www.maxmind.com/en/geolite2/signup)
-
-💡 This takes about 1 minute
+- Log in into your MaxMind account
+  - 💡 You can create a MaxMind account [here](https://www.maxmind.com/en/geolite2/signup)
+- Go to "GeoIP 2 / GeoLite 2" > Downloads
+- Download the "GeoLite2 Country: CSV Format" zip
+- Unzip and put the files into the input folder
+- Run `npm run regenerate`
+  - 💡 This takes about 1 minute or less
 
 ## Tests ✅
 
