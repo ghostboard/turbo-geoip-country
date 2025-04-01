@@ -4,7 +4,7 @@ This is an updated, performance-focused fork of [node-geoip](https://github.com/
 
 This product uses GeoLite data created by MaxMind, available from [https://www.maxmind.com/](https://www.maxmind.com/)
 
-💡 You would need to create an account and get a license key to update data by yourself
+💡 You need to create an account and obtain a license key to update the data yourself
 
 [![Build Status](https://travis-ci.com/ghostboard/turbo-geoip-country.svg?branch=master "turbo-geoip-country on Travis")](https://app.travis-ci.com/github/ghostboard/turbo-geoip-country)
 
@@ -18,13 +18,13 @@ npm install turbo-geoip-country --save
 ```javascript
 const turboGeoip = require('turbo-geoip-country');
 
-const ip = "207.97.227.239";
+let ip = "207.97.227.239";
 const country = turboGeoip.getCountry(ip);
 console.log(country);
 'US'
 
-// Also it works with anonymized ip
-const ip = "207.97.227.0";
+// It also works with anonymized IPs
+ip = "207.97.227.0";
 const country = turboGeoip.getCountry(ip);
 console.log(country);
 'US'
@@ -32,7 +32,7 @@ console.log(country);
 
 ## Why `turbo-geoip-country` ⚡️
 
-- 🚀 Get country code (2 letter ISO-3166-1) by IP v4/v6
+- 🚀 Get country code (2 letter ISO-3166-1) by IPv4/IPv6
 - 🔒 Works also with anonymized IP
 - 🔥 Performance focused (see the section below)
 - ✅ Less than 19 MB memory footprint (instead of +110 MB of node-geoip)
@@ -44,7 +44,7 @@ console.log(country);
 
 ## Performance 🔥
 
-💡 Based on the average performance of 10 executions of each package on a 2018 Mac Mini i7 6c12t 16GB
+💡 Performance benchmarks are based on an average of 10 test runs on a 2018 Mac Mini (Intel i7, 6 cores, 12 threads, 16GB RAM)
 
 | Metric | node-geoip | turbo-geoip-country | delta  |
 | ------- | ------- | ------- | ------- |
