@@ -36,7 +36,7 @@ console.log(country);
 - 🔒 Works also with anonymized IP
 - 🔥 Performance focused (see the section below)
 - ✅ Less than 19 MB memory footprint (instead of +110 MB of node-geoip)
-- ⏰ Data updated on 4th October 2025
+- ⏰ Data updated on 1st February 2026
 - 📅 Using [Calendar versioning](https://calver.org/)
 - 🌐 Production-ready, used by [Ghostboard.io](https://ghostboard.io)
 - ⚡️ Dependencies updated and 5 of them removed
